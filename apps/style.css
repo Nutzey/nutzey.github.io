@@ -1,0 +1,90 @@
+a.fill {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url("background.png");
+}
+
+.apps {
+    top: 50%;
+    left: 50%;
+    width: 630px;
+    height: 630px;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 24px;
+    width: 630px;
+    height: 630px;
+    backdrop-filter: blur(5px);
+    background-color: #FFFFFF20;
+    -webkit-box-shadow: inset 0px 0px 0px 2px #FFFFFF20;
+    -moz-box-shadow: inset 0px 0px 0px 2px #FFFFFF20;
+    box-shadow: inset 0px 0px 0px 2px #FFFFFF20;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  grid-gap: 5px;
+}
+
+.grid > div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    overflow: hidden;
+    -webkit-box-shadow: inset 0px 0px 0px 2px #FFFFFF20;
+    -moz-box-shadow: inset 0px 0px 0px 2px #FFFFFF20;
+    box-shadow: inset 0px 0px 0px 2px #FFFFFF20;
+}
+
+.grid > div img {
+    transition: transform .5s;
+}
+
+.youtube { border-top-left-radius: 16px; background-color: #ed0000; }
+.youtube:hover img { transform: scale(0.75); }
+
+.twitter { background-color: #3f9ff1; }
+.twitter img { transform: translate(0px, 95px); }
+.twitter:hover img { transform: translate(0px, -95px); }
+
+.amazon { border-top-right-radius: 16px; background-color: #f77a00; }
+.amazon:hover img { transform: scale(1.25); }
+
+.facebook { background-color: #2f57b1; }
+.facebook:hover img { transform: translate(-280px, 490px) scale(20); }
+
+.snapchat { background-color: #f9bb10; }
+.snapchat:hover img { transform: scale(1.25); }
+
+.spotify { background-color: #0b5626; }
+.spotify:hover img { transform: rotate(360deg); }
+
+.tiktok { border-bottom-left-radius: 16px; background-color: #000000; }
+.tiktok:hover img { transform: rotate(360deg); }
+
+.netflix { background-color: #da060e; }
+.netflix:hover img { transform: translate(50px, -750px) scale(20); }
+
+.whatsapp { border-bottom-right-radius: 16px; background-color: #4fba1a; }
+.whatsapp:hover img { transform: rotate(-90deg); }
