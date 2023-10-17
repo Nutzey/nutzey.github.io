@@ -6,58 +6,60 @@
     <title>Applications</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="script.js"></script>
 </head>
 <body>
-    <div class="apps">
-        <div class="container">
-            <div class="grid">
-                <div class="youtube">
-                    <a href="https://www.youtube.com/" class="fill">
-                        <img src="icons/youtube.png" width="95px">
-                    </a>
-                </div>
-                <div class="twitter">
-                    <a href="https://twitter.com/" class="fill">
-                        <img src="icons/twitter.png" width="95px">
-                    </a>
-                </div>
-                <div class="amazon">
-                    <a href="https://www.amazon.com/" class="fill">
-                        <img src="icons/amazon.png" width="95px">
-                    </a>
-                </div>
-                <div class="facebook">
-                    <a href="https://www.facebook.com/" class="fill">
-                        <img src="icons/facebook.png" width="95px">
-                    </a>
-                </div>
-                <div class="snapchat">
-                    <a href="https://www.snapchat.com/" class="fill">
-                        <img src="icons/snapchat.png" width="95px">
-                    </a>
-                </div>
-                <div class="spotify">
-                    <a href="https://spotify.com/" class="fill">
-                        <img src="icons/spotify.png" width="95px">
-                    </a>
-                </div>
-                <div class="tiktok">
-                    <a href="https://www.tiktok.com/" class="fill">
-                        <img src="icons/tiktok.png" width="95px">
-                    </a>
-                </div>
-                <div class="netflix">
-                    <a href="https://www.netflix.com/" class="fill">
-                        <img src="icons/netflix.png" width="95px">
-                    </a>
-                </div>
-                <div class="whatsapp">
-                    <a href="https://www.whatsapp.com/" class="fill">
-                        <img src="icons/whatsapp.png" width="95px">
-                    </a>
-                </div>  
+    <div class="container">
+        <div class="grid">
+            <div class="youtube" onmouseover="playYouTubeSound()">
+                <a href="https://www.youtube.com/" class="fill">
+                    <img src="icons/youtube.png" width="95px">
+                </a>
             </div>
+            <div class="twitter" onmouseover="playTwitterSound()">
+                <a href="https://twitter.com/" class="fill">
+                    <img src="icons/twitter.png" width="95px">
+                </a>
+            </div>
+            <div class="amazon" onmouseover="playAmazonSound()">
+                <a href="https://www.amazon.com/" class="fill">
+                    <img src="icons/amazon.png" width="95px">
+                </a>
+            </div>
+            <div class="facebook" onmouseover="playFacebookSound()">
+                <a href="https://www.facebook.com/" class="fill">
+                    <img src="icons/facebook.png" width="95px">
+                </a>
+            </div>
+            <div class="snapchat" onmouseover="playSnapchatSound()">
+                <a href="https://www.snapchat.com/" class="fill">
+                    <img src="icons/snapchat.png" width="95px">
+                </a>
+            </div>
+            <div class="spotify" onmouseover="playSpotifySound()">
+                <a href="https://spotify.com/" class="fill">
+                    <img src="icons/spotify.png" width="95px">
+                </a>
+            </div>
+            <div class="tiktok" onmouseover="playTikTokSound()">
+                <a href="https://www.tiktok.com/" class="fill">
+                    <img src="icons/tiktok.png" width="95px">
+                </a>
+            </div>
+            <div class="netflix" onmouseover="playNetflixSound()">
+                <a href="https://www.netflix.com/" class="fill">
+                    <img src="icons/netflix.png" width="95px">
+                </a>
+            </div>
+            <div class="whatsapp" onmouseover="playWhatsAppSound()">
+                <a href="https://www.whatsapp.com/" class="fill">
+                    <img src="icons/whatsapp.png" width="95px">
+                </a>
+            </div>  
         </div>
+    </div>
+    <div class="blur-overlay" id="blur-overlay">
+        <button onclick="removeBlurOverlay()">Afficher le site</button>
     </div>
 </body>
 </html>

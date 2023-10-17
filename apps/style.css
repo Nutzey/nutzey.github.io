@@ -16,22 +16,56 @@ body {
     background-image: url("background.png");
 }
 
-.apps {
-    top: 50%;
-    left: 50%;
-    width: 630px;
-    height: 630px;
-    transform: translate(-50%, -50%);
+.blur-overlay {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 125%;
     position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(50px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #FFFFFF80;
 }
+
+.blur-overlay button {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 100%;
+    width: 175px;
+    height: 60px;
+    background-color: #FFFFFF80;
+    border-radius: 4px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.35s;
+    -webkit-box-shadow: inset 0px 0px 0px 1px #00000020;
+    -moz-box-shadow: inset 0px 0px 0px 1px #00000020;
+    box-shadow: inset 0px 0px 0px 1px #00000020;
+}
+
+.blur-overlay button:hover {
+    background-color: #FFFFFF40;
+}
+
 
 .container {
     justify-content: center;
     align-items: center;
     display: flex;
-    border-radius: 24px;
-    width: 630px;
-    height: 630px;
+    border-radius: 22px;
+    top: 50%;
+    left: 50%;
+    width: 624px;
+    height: 624px;
+    transform: translate(-50%, -50%);
+    position: fixed;
     backdrop-filter: blur(5px);
     background-color: #FFFFFF20;
     -webkit-box-shadow: inset 0px 0px 0px 2px #FFFFFF20;
@@ -55,36 +89,64 @@ body {
     -webkit-box-shadow: inset 0px 0px 0px 2px #FFFFFF20;
     -moz-box-shadow: inset 0px 0px 0px 2px #FFFFFF20;
     box-shadow: inset 0px 0px 0px 2px #FFFFFF20;
+    transition: 0.35s;
+    -moz-transition: 0.35s;
+    -webkit-transition: 0.35s;
 }
 
 .grid > div img {
-    transition: transform .5s;
+    filter: drop-shadow(0px 0px 2.5px #FFFFFF80);
+    transition: 0.35s;
+    -moz-transition: 0.35s;
+    -webkit-transition: 0.35s;
 }
 
-.youtube { border-top-left-radius: 16px; background-color: #ed0000; }
-.youtube:hover img { transform: scale(0.75); }
+.grid > div:hover img {
+    filter: drop-shadow(0px 0px 5px #FFFFFF);
+    transform: scale(1.1);
+}
 
-.twitter { background-color: #3f9ff1; }
-.twitter img { transform: translate(0px, 95px); }
-.twitter:hover img { transform: translate(0px, -95px); }
+.youtube {
+    border-top-left-radius: 16px; background-color: #ed0000;
+    filter: drop-shadow(0px 0px 5px #ed000080);
+}
 
-.amazon { border-top-right-radius: 16px; background-color: #f77a00; }
-.amazon:hover img { transform: scale(1.25); }
+.twitter {
+    background-color: #3f9ff1;
+    filter: drop-shadow(0px 0px 5px #3f9ff180);
+}
 
-.facebook { background-color: #2f57b1; }
-.facebook:hover img { transform: translate(-280px, 490px) scale(20); }
+.amazon {
+    border-top-right-radius: 16px; background-color: #f77a00;
+    filter: drop-shadow(0px 0px 5px #f77a0080);
+}
 
-.snapchat { background-color: #f9bb10; }
-.snapchat:hover img { transform: scale(1.25); }
+.facebook {
+    background-color: #2f57b1;
+    filter: drop-shadow(0px 0px 5px #2f57b180);
+}
 
-.spotify { background-color: #0b5626; }
-.spotify:hover img { transform: rotate(360deg); }
+.snapchat {
+    background-color: #f9bb10;
+    filter: drop-shadow(0px 0px 5px #f9bb1080);
+}
 
-.tiktok { border-bottom-left-radius: 16px; background-color: #000000; }
-.tiktok:hover img { transform: rotate(360deg); }
+.spotify {
+    background-color: #0b5626;
+    filter: drop-shadow(0px 0px 5px #0b562680);
+}
 
-.netflix { background-color: #da060e; }
-.netflix:hover img { transform: translate(50px, -750px) scale(20); }
+.tiktok {
+    border-bottom-left-radius: 16px; background-color: #000000;
+    filter: drop-shadow(0px 0px 5px #00000080);
+}
 
-.whatsapp { border-bottom-right-radius: 16px; background-color: #4fba1a; }
-.whatsapp:hover img { transform: rotate(-90deg); }
+.netflix {
+    background-color: #da060e;
+    filter: drop-shadow(0px 0px 5px #da060e80);
+}
+
+.whatsapp {
+    border-bottom-right-radius: 16px; background-color: #4fba1a;
+    filter: drop-shadow(0px 0px 5px #4fba1a80);
+}
