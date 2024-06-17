@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Speech to Text</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://unpkg.com/compromise"></script>
+</head>
+
+<body>
+    <div id="audio"></div>
+    <div class="container" id="container">
+        <svg class="startButton" id="startButton" width="80" height="117" viewBox="0 0 80 117" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M27 117H53C53.8284 117 54.5 116.328 54.5 115.5C54.5 114.672 53.8284 114 53 114H41.5V91.6924C60.1404 91.0177 75.5869 77.8198 79.678 60.2605C79.8926 59.3394 79.1776 58.48 78.2318 58.48C77.5121 58.48 76.8952 58.9893 76.7298 59.6897C72.7978 76.3337 57.8453 88.7195 40 88.7195C22.1546 88.7195 7.20219 76.3337 3.27012 59.6897C3.10465 58.9893 2.48777 58.48 1.76804 58.48C0.822364 58.48 0.107337 59.3394 0.321936 60.2605C4.413 77.8198 19.8596 91.0177 38.5 91.6924V114H27C26.1715 114 25.5 114.672 25.5 115.5C25.5 116.328 26.1715 117 27 117Z"
+                fill="url(#paint0_linear_22_43)" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18 22C18 9.84973 27.8497 0 40 0C52.1502 0 62 9.84973 62 22V52C62 64.1503 52.1502 74 40 74C27.8497 74 18 64.1503 18 52V22ZM59 22V52C59 62.4934 50.4934 71 40 71C29.5066 71 21 62.4934 21 52V22C21 11.5066 29.5066 3 40 3C50.4934 3 59 11.5066 59 22Z"
+                fill="url(#paint1_linear_22_43)" />
+            <defs>
+                <linearGradient id="paint0_linear_22_43" x1="40" y1="0" x2="40" y2="117" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#5676BE" />
+                    <stop offset="1" stop-color="#96588C" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_22_43" x1="40" y1="0" x2="40" y2="117" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#5676BE" />
+                    <stop offset="1" stop-color="#96588C" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <div class="visualizer hidden" id="visualizer">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <p id="output" class="outputText hidden"></p>
+        <p id="answer" class="answerText hidden"></p>
+        <p id="subtitle" class="subtitle hidden">
+            <span id="wikipedia" class="wikipedia hidden"><span class="normalText">Ouvrir dans </span><span
+                    class="gradientText">Wikipedia</span></span><span id="separator" class="hidden"><span
+                    class="normalText">&nbsp&nbsp・&nbsp&nbsp</span></span><span id="search" class="search hidden"><span
+                    class="normalText">Rechercher sur </span><span class="gradientText" id="searchLink">Google</span></span>
+        </p>
+    </div>
+</body>
+<script src='script.js'></script>
+
+</html>

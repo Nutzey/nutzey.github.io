@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: "Rubik", sans-serif;
+    font-weight: 350;
+    letter-spacing: 0.25px;
+}
+
+::-moz-selection {
+    background: hsla(0, 0%, 100%, 0.25);
+}
+
+::selection {
+    background: hsla(0, 0%, 100%, 0.1);
+}
+
+body {
+    background-color: hsl(227, 35%, 6%);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.0125'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    min-width: 700px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.outputText {
+    margin: 0px;
+    word-wrap: break-word;
+    line-height: 42px;
+    max-width: 700px;
+    font-size: 28px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 20px;
+}
+
+.visualizer {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 175px;
+    height: 100px;
+    transform: scale(0.9);
+}
+
+.bar {
+    width: 3px;
+    height: 100px;
+    background-image: linear-gradient(to bottom, #5676BE, #96588C);
+    background-size: 100% 100%;
+    border-radius: 100px;
+}
+
+.startButton {
+    margin: auto;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -webkit-transition: 0.25s ease-in-out;
+    transform: scale(0.9);
+}
+
+.startButton:hover {
+    transform: scale(0.85);
+}
+
+.answerText {
+    display: inline-block;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #5676BE, #96588C);
+    text-align: left; /* Align text to the left */
+    word-wrap: break-word;
+    font-size: 20px;
+    line-height: 31px;
+    border-radius: 8px;
+    padding: 24px 30px;
+    width: 700px; /* Set fixed width */
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.answerDiv img {
+    width: 25%;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.subtitle {
+    margin: auto;
+    width: fit-content;
+    cursor: default;
+}
+
+.subtitle .normalText {
+    font-weight: 415;
+    font-size: 18px;
+    line-height: 31px;
+    background: -webkit-linear-gradient(0deg, hsla(0, 0%, 100%, 0.75), hsla(0, 0%, 100%, 0.75));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle .gradientText {
+    font-weight: 415;
+    font-size: 18px;
+    line-height: 31px;
+    background: -webkit-linear-gradient(-90deg, #5676BE, #96588C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wikipedia, .search {
+    cursor: pointer;
+}
